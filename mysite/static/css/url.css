@@ -1,0 +1,196 @@
+/* url.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fdf6f0;
+}
+
+/* Header Styles */
+.logo img {
+    width: 40px; /* Adjust width as needed */
+    height: auto; /* Maintains aspect ratio */
+    vertical-align: middle; /* Aligns the image with the text */
+    margin-right: 0.5rem; /* Adds some space between the image and the text */
+}
+
+header {
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.2rem;
+    color: #d4918e;
+}
+
+.logo span {
+    font-weight: bold;
+    border: 2px solid #d4918e;
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+}
+
+.nav-right {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.feature-dropdown, .faq, .user {
+    cursor: pointer;
+}
+
+/* Main Content Styles */
+.analysis-section {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    color: #d4918e;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.url-input-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.globe-icon {
+    margin-right: 0.5rem;
+    color: #888;
+}
+
+input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.analyze-btn {
+    background-color: #e6c4c0;
+    color: #333;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.analyze-btn:hover {
+    background-color: #d4918e;
+}
+/* Style for the feature dropdown */
+.feature-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position it below the button */
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    min-width: 200px;
+    z-index: 10;
+}
+
+/* Style for each dropdown item */
+.dropdown-item {
+    padding: 1rem;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show the dropdown menu on hover */
+.feature-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+.footer-left p {
+    margin: 0.2rem 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-icon img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.social-icon:hover img {
+    opacity: 1;
+}
